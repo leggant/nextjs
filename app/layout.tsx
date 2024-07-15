@@ -1,7 +1,17 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+
+
+
+
+
 import './globals.css';
+
+
+
+import SiteFooter from '@/components/SiteFooter/MainFooter';
+import MainSiteHeader from '@/components/SiteNav/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='container'>{children}</main>
+        <div className='flex min-h-screen flex-col'>
+          <MainSiteHeader />
+          <main className='container'>{children}</main>
+          <SiteFooter />
+        </div>
       </body>
     </html>
   );

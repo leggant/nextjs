@@ -9,5 +9,5 @@
   "proseWrap": "always",
   "tailwindFunctions": ["clsx"],
   "plugins": ["prettier-plugin-tailwindcss", "@ianvs/prettier-plugin-sort-imports"],
-  "importOrder": ["^react$", "", "<BUILTIN_MODULES>", "", "<THIRD_PARTY_MODULES>", "", "^[.]"]
+  "importOrder": ["^react$", "<BUILTIN_MODULES>", "", "<THIRD_PARTY_MODULES>", "", "^[.]"]
 }
