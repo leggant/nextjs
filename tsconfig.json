@@ -12,13 +12,21 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/shadcn/*": ["./components/ui/*"],
+      "@/components/*": ["./components/*"],
+      "@utils": ["./lib/utils.ts"],
+      "@/types/*": ["./types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
