@@ -1,13 +1,30 @@
 {
   "printWidth": 80,
-  "trailingComma": "es5",
-  "bracketSpacing": true,
-  "semi": true,
-  "singleQuote": true,
   "jsxSingleQuote": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "semi": true,
+  "bracketSpacing": true,
   "bracketSameLine": true,
   "proseWrap": "always",
-  "tailwindFunctions": ["clsx"],
-  "plugins": ["prettier-plugin-tailwindcss", "@ianvs/prettier-plugin-sort-imports"],
-  "importOrder": ["^react$", "<BUILTIN_MODULES>", "", "<THIRD_PARTY_MODULES>", "", "^[.]"]
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrder": [
+    "^react$",
+    "^<TYPES>^(next|next/.*)$",
+    "^(next|next/.*)$",
+    "<BUILTIN_MODULES>",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "<TYPES>",
+    "^(@/types/.*)$",
+    "",
+    "^@/components/ui/.*$",
+    "",
+    "^(@/.*)$",
+    "^(@/testing/.*)$",
+    "^[.]"
+  ]
 }

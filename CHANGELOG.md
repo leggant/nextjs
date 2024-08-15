@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.1.0
 
+### Merged
+
+- Install Dependencies [`#1`](https://github.com/leggant/nextjs/pull/1)
+
 ### Commits
 
 - Initial commit [`f07492d`](https://github.com/leggant/nextjs/commit/f07492d300956ec54d623862b8f459e14a68f61b)
 - init next project [`b0e07e3`](https://github.com/leggant/nextjs/commit/b0e07e34759a7583f5a57d9fa90aa7cdae4a3f20)
-- build(./*): install dev, prod dependencies [`7f9bc03`](https://github.com/leggant/nextjs/commit/7f9bc037b9e91d3eae89a6a9b2b411131bc2ebf3)
