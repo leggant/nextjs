@@ -1,1 +1,1 @@
-npm run build && npm run version
+npx --no-install lint-staged --allow-empty
