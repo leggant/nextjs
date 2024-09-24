@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-
-import { poppins400 } from '@/fonts';
+import { poppins400 } from '@fonts';
 
 import './globals.css';
 
