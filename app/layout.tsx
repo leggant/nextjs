@@ -2,15 +2,10 @@ import type { Metadata } from 'next';
 
 import { poppins400 } from '@/fonts';
 
-
-
 import './globals.css';
-
-
 
 import SiteFooter from '@/components/SiteFooter/MainFooter';
 import MainSiteHeader from '@/components/SiteNav/Header';
-
 
 export const metadata: Metadata = {
   title: {
@@ -32,14 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en-nz'>
       <body
-        className={`${poppins400} grid min-h-[100dvh] grid-rows-[auto_1fr_auto]`}>
-        <div className='flex min-h-screen flex-col'>
-          <MainSiteHeader />
-          <main className='container'>{children}</main>
-          <SiteFooter />
-        </div>
+        className={`${poppins400.className} grid min-h-[100dvh] grid-rows-[auto_1fr_auto]`}>
+        <MainSiteHeader />
+        <main className='container'>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

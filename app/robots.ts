@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+
 // Update routes to be disallowed
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -25,7 +25,7 @@
       "@/*": ["./*"],
       "@/shadcn/*": ["./components/ui/*"],
       "@/components/*": ["./components/*"],
-      "@utils": ["./lib/utils.ts"],
+      "@/lib/*": ["./lib/*"],
       "@/types/*": ["./types/*"],
       "@/fonts": ["./lib/fonts.ts"],
       "@/db": ["./lib/db.ts"],
