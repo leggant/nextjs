@@ -23,17 +23,20 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/shadcn/*": ["./components/ui/*"],
       "@/components/*": ["./components/*"],
-      "@/lib/*": ["./lib/*"],
+      "@/shadcn/*": ["./components/ui/*"],
       "@/types/*": ["./types/*"],
-      "@/fonts": ["./lib/fonts.ts"],
-      "@/db": ["./lib/db.ts"],
-      "@/utils": ["./lib/utils.ts"],
-      "@/actions/*": ["./actions/*"],
-      "@/schemas/*": ["./schemas/*"]
+      "@/lib/*": ["./lib/*"],
+      "@db": ["./lib/db.ts"],
+      "@env": ["./lib/env.ts"],
+      "@fonts": ["./lib/fonts.ts"],
+      "@utils": ["./lib/utils.ts"],
+      "@/hooks/*": ["./lib/hooks/*"],
+      "@/store/*": ["./lib/store/*"],
+      "@/actions/*": ["./lib/actions/*"],
+      "@/schemas/*": ["./lib/schemas/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types/globals.d.ts"],
   "exclude": ["node_modules"]
 }
